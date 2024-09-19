@@ -29,6 +29,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "bun src/index.ts",
+    "convert": "bunx @svgr/cli --typescript --out-dir src/components --filename-case kebab -- public",
     "ci": "pnpm run format:check && pnpm run build && pnpm run check-exports",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -38,7 +39,9 @@
     "prepublishOnly": "npm run ci"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.16.4",
     "@types/react": "^18.3.8",
+    "prettier": "^3.3.3",
     "typescript": "^5.6.2"
   },
   "dependencies": {
