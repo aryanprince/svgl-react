@@ -1,0 +1,40 @@
+{
+  "name": "svgl-react",
+  "version": "0.0.0",
+  "description": "A React component library for popular SVG logos from svgl.app",
+  "keywords": [
+    "svgl",
+    "svg",
+    "svgs",
+    "react",
+    "brand",
+    "icons",
+    "logos"
+  ],
+  "author": "Aryan Prince <hello@aryanprince.com> (https://x.com/aryxnprince)",
+  "homepage": "https://svgl.app/",
+  "bugs": {
+    "url": "https://github.com/aryanprince/svgl-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryanprince/svgl-react.git"
+  },
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "bin": {
+    "svgl-react": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "bun src/index.ts",
+    "ci": "pnpm run format:check && pnpm run build && pnpm run check-exports",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "changesets:generate": "changeset",
+    "changesets:release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
+  }
+}
