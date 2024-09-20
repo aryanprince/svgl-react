@@ -1,5 +1,5 @@
-import * as React from "react";
 import type { SVGProps } from "react";
+import * as React from "react";
 const SvgFlaskWordmarkDark = (props: SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 180" {...props}>
     <path
@@ -12,9 +12,11 @@ const SvgFlaskWordmarkDark = (props: SVGProps<SVGSVGElement>) => (
       fontFamily="High Tower Text"
       fontSize={144}
       fontWeight={400}
-      style={{
-        InkscapeFontSpecification: "High Tower Text",
-      }}
+      style={
+        {
+          InkscapeFontSpecification: "High Tower Text",
+        } as React.CSSProperties
+      }
     />
   </svg>
 );

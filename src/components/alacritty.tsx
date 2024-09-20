@@ -12,7 +12,6 @@ const SvgAlacritty = (props: SVGProps<SVGSVGElement>) => (
       fillRule: "evenodd",
       strokeLinejoin: "round",
       strokeMiterlimit: 1.41420996,
-      enableBackground: "new",
     }}
     {...props}
   >
@@ -73,7 +72,7 @@ const SvgAlacritty = (props: SVGProps<SVGSVGElement>) => (
         x={-0.096}
         y={-0.074}
         style={{
-          colorInterpolationFilters: "sRGB",
+          colorInterpolation: "sRGB",
         }}
       >
         <feGaussianBlur stdDeviation={1.002} />

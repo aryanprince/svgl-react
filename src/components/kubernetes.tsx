@@ -1,5 +1,5 @@
-import * as React from "react";
 import type { SVGProps } from "react";
+import * as React from "react";
 const SvgKubernetes = (props: SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 722.8 702" {...props}>
     <path
@@ -31,8 +31,8 @@ const SvgKubernetes = (props: SVGProps<SVGSVGElement>) => (
         wordSpacing: "normal",
         textTransform: "none",
         direction: "ltr",
-        blockProgression: "tb",
-        writingMode: "lr-tb",
+        msBlockProgression: "tb",
+        writingMode: "horizontal-tb",
         textAnchor: "start",
         baselineShift: "baseline",
         color: "#000",
@@ -48,7 +48,6 @@ const SvgKubernetes = (props: SVGProps<SVGSVGElement>) => (
         display: "inline",
         overflow: "visible",
         fontFamily: "Sans",
-        InkscapeFontSpecification: "Sans",
       }}
       transform="translate(-6 -175)"
     />

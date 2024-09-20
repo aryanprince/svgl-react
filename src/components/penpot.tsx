@@ -1,5 +1,5 @@
-import * as React from "react";
 import type { SVGProps } from "react";
+import * as React from "react";
 const SvgPenpot = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -20,12 +20,11 @@ const SvgPenpot = (props: SVGProps<SVGSVGElement>) => (
         textDecorationStyle: "solid",
         textDecorationColor: "#000",
         textTransform: "none",
-        blockProgression: "tb",
         whiteSpace: "normal",
         isolation: "auto",
         mixBlendMode: "normal",
-        solidColor: "#000",
-        solidOpacity: 1,
+        color: "#000",
+        opacity: 1,
       }}
       transform="translate(136.643 -280.346)"
     />
