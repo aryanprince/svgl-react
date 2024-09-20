@@ -1,5 +1,11 @@
 # svgl-react
 
+## 1.0.2
+
+### Patch Changes
+
+- d4ae26a: Add credits to README
+
 ## 1.0.1
 
 ### Patch Changes
