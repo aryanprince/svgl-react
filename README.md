@@ -40,3 +40,9 @@ const MyComponent = () => {
 
 - [ ] Allow custom props like sizes, color, wordmark, etc.
 - [ ] Optimize package (tree-shaking, etc.)
+
+## 🙏 Credits
+
+All SVG logos are from [@pheralb's](https://x.com/pheralb_) [svgl.app](https://svgl.app/) project. Thank you for the amazing work!
+
+Check out [@sujjeee's](https://x.com/sujjeeee) [`svgls`](https://github.com/sujjeee/svgls) CLI to add logos to your project as SVGs instead. It's awesome and was my main inspo for this project!
