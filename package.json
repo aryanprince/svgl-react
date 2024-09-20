@@ -29,7 +29,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "bun src/index.ts",
-    "convert": "bunx @svgr/cli --typescript --out-dir src/components --filename-case kebab -- public",
+    "dev:convert-svg-to-react": "pnpm dlx @svgr/cli --typescript --out-dir src/components --filename-case kebab -- public",
+    "dev:generate-index-file": "tsx src/utils/generate-index.ts",
     "ci": "pnpm run format:check && pnpm run build && pnpm run check-exports",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -40,8 +41,10 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.16.4",
+    "@types/node": "^22.5.5",
     "@types/react": "^18.3.8",
     "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
     "typescript": "^5.6.2"
   },
   "dependencies": {
