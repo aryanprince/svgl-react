@@ -1,5 +1,11 @@
 # svgl-react
 
+## 1.0.1
+
+### Patch Changes
+
+- 58a1764: Update README with screenshots and usage instructions
+
 ## 1.0.0
 
 ### Major Changes
