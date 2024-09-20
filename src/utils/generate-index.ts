@@ -5,12 +5,13 @@ import path from 'path';
 const toPascalCase = (str: string): string => {
   return str
     .split('-')               // Split by hyphen
-    .map(word => {
+    .map((word, index) => {
       // If the word starts with a number, replace it with the word equivalent
-      if (/^\d/.test(word)) {
-        return convertNumberToWord(word.charAt(0)) + word.slice(1);
+      if (index === 0 && /^\d/.test(word)) {
+        // Recursively converts rest of word if it starts with number (eg: '1password' -> 'One' + 'password' -> 'OnePassword')
+        return convertNumberToWord(word.charAt(0)) + toPascalCase(word.slice(1)); 
       }
-      return word.charAt(0).toUpperCase() + word.slice(1);
+      return word.charAt(0).toUpperCase() + word.slice(1); // Capitalize first letter of each word
     })
     .join('');                 // Join into a single string
 };
