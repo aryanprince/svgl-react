@@ -1,5 +1,11 @@
 # svgl-react
 
+## 1.1.3
+
+### Patch Changes
+
+- 8f6e8c4: ⏪️ Bring back support for CJS
+
 ## 1.1.2
 
 ### Patch Changes
