@@ -6,25 +6,18 @@
     "target": "es2022",
     "allowJs": true,
     "resolveJsonModule": true,
+    "moduleResolution": "Node",
     "moduleDetection": "force",
     "isolatedModules": true,
-    "verbatimModuleSyntax": true,
-    "lib": ["es2022"],
 
     /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
 
-    /* If transpiling with TypeScript: */
-    "module": "NodeNext",
-    "outDir": "dist",
-    "rootDir": "src",
-    "sourceMap": true,
-
-    /* AND if you're building for a library: */
-    "declaration": true,
-
-    "jsx": "react"
+    /* Others: */
+    "jsx": "react",
+    "lib": ["es2022"],
+    "noEmit": true
   }
 }
