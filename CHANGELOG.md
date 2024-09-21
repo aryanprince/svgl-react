@@ -1,5 +1,11 @@
 # svgl-react
 
+## 1.0.3
+
+### Patch Changes
+
+- 28c70a2: Optimize package size by moving `react` to peer dependency
+
 ## 1.0.2
 
 ### Patch Changes
