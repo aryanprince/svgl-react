@@ -21,7 +21,6 @@
     "url": "git+https://github.com/aryanprince/svgl-react.git"
   },
   "license": "MIT",
-  "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
