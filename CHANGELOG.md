@@ -1,5 +1,11 @@
 # svgl-react
 
+## 1.1.1
+
+### Patch Changes
+
+- 397d857: ⚡️ Add minify flag from `tsup`
+
 ## 1.1.0
 
 ### Minor Changes
