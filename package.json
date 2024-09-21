@@ -21,8 +21,6 @@
     "url": "git+https://github.com/aryanprince/svgl-react.git"
   },
   "license": "MIT",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "dev": "bun src/index.ts",
@@ -30,7 +28,7 @@
     "dev:generate-index-file": "tsx src/utils/generate-index.ts",
     "clean": "rm -rf node_modules && rm -rf pnpm-lock.yaml && rm -rf dist",
     "clean:dist": "rm -rf dist",
-    "ci": "pnpm run format:check && pnpm run build && pnpm run check-exports",
+    "ci": "pnpm run format:check && pnpm run lint && pnpm run build && pnpm run check-exports",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "tsc",
