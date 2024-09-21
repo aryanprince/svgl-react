@@ -1,5 +1,11 @@
 # svgl-react
 
+## 1.1.0
+
+### Minor Changes
+
+- c5a1a86: ⚡️ Switch to `tsup` from `tsc`
+
 ## 1.0.3
 
 ### Patch Changes
