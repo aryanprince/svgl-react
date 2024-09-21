@@ -38,6 +38,7 @@
     "check-exports": "attw --pack .",
     "changesets:generate": "changeset",
     "changesets:release": "changeset version && changeset publish",
+    "release": "pnpm run ci && pnpm run changesets:release",
     "prepublishOnly": "npm run ci"
   },
   "devDependencies": {
