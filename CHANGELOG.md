@@ -1,5 +1,11 @@
 # svgl-react
 
+## 1.1.4
+
+### Patch Changes
+
+- b8dc99f: ⚡️ Enable treeshaking using `tsup`
+
 ## 1.1.3
 
 ### Patch Changes
