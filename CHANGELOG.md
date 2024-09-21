@@ -1,5 +1,11 @@
 # svgl-react
 
+## 1.1.2
+
+### Patch Changes
+
+- dabc28f: ⚡️ Deprecate CJS support
+
 ## 1.1.1
 
 ### Patch Changes
